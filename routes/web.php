@@ -11,6 +11,7 @@
 |
 */
 
+// USER
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.user.user-main');
 });

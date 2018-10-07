@@ -1,13 +1,14 @@
+import Vue from 'vue';
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
+import UserMaster from './components/user/_layouts/UserMaster.vue';
 
-require('./bootstrap');
+// require('./bootstrap');
 
 window.Vue = require('vue');
+
+/* USER */
+// UserMaster
+Vue.component('userMaster', UserMaster);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -18,5 +19,7 @@ window.Vue = require('vue');
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#user_root',
+    template: `<userMaster></userMaster>`,
+	componenets: { UserMaster },
 });
