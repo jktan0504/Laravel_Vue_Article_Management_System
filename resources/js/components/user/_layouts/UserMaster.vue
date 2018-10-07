@@ -1,22 +1,18 @@
 <template lang="html">
     <div class="">
-        <h3 class="text-center myTitle">My Blog Articles</h3>
-        <small><strong><p class="text-center">All articles are below</p></strong></small>
-        <div class="container">
-            <div class="alert alert-primary" role="alert">
-                A simple primary alert—check it out!
-            </div>
-        </div>
+        <app-header></app-header>
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
+    import Header from '../_included/header/header';
     export default {
+        components: {
+            appHeader: Header,
+        }
     }
 </script>
 
 <style lang="css" scoped>
-    .myTitle {
-        padding: 2% 2% 0 2%;
-    }
 </style>

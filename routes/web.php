@@ -15,3 +15,8 @@
 Route::get('/', function () {
     return view('pages.user.user-main');
 });
+
+// ADMIN
+Route::get('/backend/{vue_capture?}', function () {
+    return view('pages.admin.admin-main');
+})->where('vue_capture', '[\/\w\.-]*');

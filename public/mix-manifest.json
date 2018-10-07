@@ -1,4 +1,11 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/js/admin.js": "/js/admin.js",
+    "/css/admin/font-awesome.min.css": "/css/admin/font-awesome.min.css",
+    "/css/admin/jquery.mCustomScrollbar.css": "/css/admin/jquery.mCustomScrollbar.css",
+    "/css/admin/fontastic.css": "/css/admin/fontastic.css",
+    "/css/admin/grasp_mobile_progress_circle-1.0.0.min.css": "/css/admin/grasp_mobile_progress_circle-1.0.0.min.css",
+    "/css/admin/style.blue.css": "/css/admin/style.blue.css",
+    "/css/admin/mCSB_buttons.png": "/css/admin/mCSB_buttons.png"
 }

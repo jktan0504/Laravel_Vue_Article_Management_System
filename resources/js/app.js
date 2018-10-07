@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import router from './components/user/_router'; // UserRouter
 
 import UserMaster from './components/user/_layouts/UserMaster.vue';
 
@@ -22,4 +23,5 @@ const app = new Vue({
     el: '#user_root',
     template: `<userMaster></userMaster>`,
 	componenets: { UserMaster },
+    router: router,
 });
