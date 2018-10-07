@@ -12,9 +12,9 @@
 */
 
 // USER
-Route::get('/', function () {
+Route::get('/{vue_capture?}', function () {
     return view('pages.user.user-main');
-});
+})->where('vue_capture', '[\/\w\.-]*');
 
 // ADMIN
 Route::get('/backend/{vue_capture?}', function () {
